@@ -16,7 +16,7 @@ The program gets 10 signed integers from the user, stores them in an array, and 
 3. Configure the necessary libraries. **Note:** If you are using an older version of Visual Studio (prior to 2019), other versions of
 the textbook libraries are available from the following website: http://asmirvine.com/
    
-   1. Download a zip file containing the libraries:\http://asmirvine.com/gettingStartedVS2019/Irvine.zip
+   1. Download a zip file containing the libraries: http://asmirvine.com/gettingStartedVS2019/Irvine.zip
    
    2. Extract the contents of this file into the C:\ directory. If the files were extracted properly, the following file should exist on your computer: C:\Irvine\Irvine32.lib
    
@@ -30,7 +30,7 @@ the textbook libraries are available from the following website: http://asmirvin
    
    7. In the Solution Explorer pane, notice that the default .asm file in the project is AddSum2.asm. Right-click this file, click "Remove", and then click "Remove" again to remove the file from the project.
    
-   8. In the Solution Explorer, right-click **Project**, hover over "Add", and click on "Existing Item...."
+   8. In the Solution Explorer, right-click **Project**, hover over "Add", and click on "Existing Item...".
    
    9. In the project directory, double-click on ioProcs.asm to add that file to the project. The file name should now appear in the Solution Explorer.
    
@@ -41,19 +41,20 @@ To run the program, click on "Debug", and then "Start Without Debugging" in the 
 
 ![starting-screen](images/ioProcs-starting-screen.png "Starting screen when ioProcs.asm is first assembled and run.")
 
-The line number indicates the *n*th valid number to enter, where *n* can go up to 10. As numbers are entered, the program displays the running sub-total, and once 10 valid numbers have been entered, they are printed, as well as their sum and arithmetic mean. Here is a sample program with various valid and invalid inputs:
+The line number indicates the *n*th valid number to enter, where *n* can go up to 10. As numbers are entered, the program displays the running sub-total, and once 10 valid numbers have been entered, they are printed consecutively in order, as well as their sum and arithmetic mean. Here is a sample program with various valid and invalid inputs:
 
 ![run-through](images/ioProcs-run-through.png "Final screen displaying the inputted numbers, their sum, and their arithmetic mean.")
 
-**Note:** Since the program uses 32-bit registers, the minimum number that can be entered is -2<sup>31</sup> (-2,147,483,648), and the maximum number that can be entered is 2<sup>31</sup> - 1 (2,147,483,647).
+**Note:** Since the program uses 32-bit registers, the minimum number that can be entered is -2<sup>31</sup> (-2,147,483,648), and the maximum number that can be entered is 2<sup>31</sup> - 1 (2,147,483,647). Inputs that go beyond either of these bounds should result in an error message, as seen above.
 
 ## Built With
 * assembly language
-* Microsoft Macro Assembler
 * Microsoft Visual Studio 2019
+* Microsoft Macro Assembler (included in Visual Studio)
 
 ## Author
 * Timothy Yoon
 
 ## Credits
 * Project idea and specifications courtesy of Stephen Redfield and Dr. Ramesh Rajagopalan of Oregon State University's Winter 2020 CS 271 course.
+* Many of the installation instructions above courtesy of CS 271's installation and set-up tutorial for Visual Studio 2019.
