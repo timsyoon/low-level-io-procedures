@@ -78,14 +78,14 @@ sum_msg				BYTE		"The sum of these numbers is: ",0
 avg_msg				BYTE		"The rounded average is: ",0
 bye_msg				BYTE		"Thanks for playing!",0
 
-input_count			DWORD		1																					  ;number of user input attempts
-str_len				DWORD		?																					  ;length of digit string
-sign				DWORD		5																					  ;0 for + int, 1 for -, 5 for other
-digit_count			DWORD		?																					  ;number of digits in numeric value
-array				SDWORD		ARRAYLENGTH DUP(?)																	  ;stores valid user input values
-num_val				SDWORD		?																					  ;numeric value after string conv.
-sum					SDWORD		0																					  ;sum of all values entered so far
-avg					SDWORD		?																					  ;average of the elements in array
+input_count			DWORD		1																;number of user input attempts
+str_len				DWORD		?																;length of digit string
+sign				DWORD		5																;0 for + int, 1 for -, 5 for other
+digit_count			DWORD		?																;number of digits in numeric value
+array				SDWORD		ARRAYLENGTH DUP(?)												;stores valid user input values
+num_val				SDWORD		?																;numeric value after string conversion
+sum					SDWORD		0																;sum of all values entered so far
+avg					SDWORD		?																;average of the elements in array
 
 .code
 
