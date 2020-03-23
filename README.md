@@ -13,7 +13,7 @@ The program gets 10 signed integers from the user, stores them in an array, and 
 
 2. When asked to select your intended workload, select "Desktop development with C++."
 
-3. Configure the necessary libraries. **Note**: If you are using an older version of Visual Studio (prior to 2019), other versions of
+3. Configure the necessary libraries. **Note:** If you are using an older version of Visual Studio (prior to 2019), other versions of
 the textbook libraries are available from the following website: http://asmirvine.com/
    
    1. Download a zip file containing the libraries:\http://asmirvine.com/gettingStartedVS2019/Irvine.zip
@@ -37,9 +37,23 @@ the textbook libraries are available from the following website: http://asmirvin
    10. Double-click on ioProcs.asm to view its contents. It should now be ready to be assembled and run. Please see the Usage section for information on how to run the program.
 
 ## Usage
+To run the program, click on "Debug", and then "Start Without Debugging" in the top toolbar. A console window with instructions should display as follows:
 
+![starting-screen](images/ioProcs-starting-screen.png "Starting screen when ioProcs.asm is first assembled and run.")
 
-## Contributing
+The line number indicates the *n*th valid number to enter, where *n* can go up to 10. As numbers are entered, the program displays the running sub-total, and once 10 valid numbers have been entered, they are printed, as well as their sum and arithmetic mean. Here is a sample program with various valid and invalid inputs:
 
+![run-through](images/ioProcs-run-through.png "Final screen displaying the inputted numbers, their sum, and their arithmetic mean.")
+
+**Note:** Since the program uses 32-bit registers, the minimum number that can be entered is -2<sup>31</sup> (-2,147,483,648), and the maximum number that can be entered is 2<sup>31</sup> - 1 (2,147,483,647).
+
+## Built With
+* assembly language
+* Microsoft Macro Assembler
+* Microsoft Visual Studio 2019
+
+## Author
+* Timothy Yoon
 
 ## Credits
+* Project idea and specifications courtesy of Stephen Redfield and Dr. Ramesh Rajagopalan of Oregon State University's Winter 2020 CS 271 course.
